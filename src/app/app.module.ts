@@ -10,25 +10,25 @@ import { AboutComponent } from './about/about.component';
 import { ArticleComponent } from './article/article.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { HttpClientModule } from '@angular/common/http';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 @NgModule({
    declarations: [
-      AppComponent,
-      NavBarComponent,
-      FooterComponent,
-      ArticleListComponent,
-      AboutComponent,
-      ArticleComponent,
-      NotFoundComponent
+     AppComponent,
+     NavBarComponent,
+     FooterComponent,
+     ArticleListComponent,
+     AboutComponent,
+     ArticleComponent,
+     NotFoundComponent,
+     DashboardComponent,
    ],
    imports: [
-      BrowserModule.withServerTransition({ appId: 'serverApp' }),
-      AppRoutingModule,
-      HttpClientModule
+     BrowserModule.withServerTransition({ appId: "serverApp" }),
+     AppRoutingModule,
+     HttpClientModule
    ],
    providers: [],
-   bootstrap: [
-      AppComponent
-   ]
-})
+   bootstrap: [AppComponent]
+ })
 export class AppModule { }
