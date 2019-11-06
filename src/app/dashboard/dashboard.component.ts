@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ArticleOverviewComponent } from './article-overview/article-overview.component';
+
 
 @Component({
   selector: 'app-dashboard',
