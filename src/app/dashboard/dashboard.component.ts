@@ -8,8 +8,10 @@ import { Article } from '../article';
   templateUrl: './dashboard.component.html',
   styleUrls: ['./dashboard.component.css']
 })
+
 export class DashboardComponent implements OnInit {
   articles: Article[];
+
   constructor( private dashboardService: DashboardService ) { }
 
   ngOnInit() {
@@ -19,5 +21,4 @@ export class DashboardComponent implements OnInit {
   getArticles(): void{
     this.dashboardService.getArticles().subscribe(result => this.articles = result);
   }
-
 }
