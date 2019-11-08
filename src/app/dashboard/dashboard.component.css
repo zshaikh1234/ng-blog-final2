@@ -4,6 +4,7 @@
     background-color: #000000;
     border-radius: 50%;
     display: inline-block;
+    cursor: pointer;
 }
 
 .overview{

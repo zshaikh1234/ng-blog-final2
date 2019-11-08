@@ -15,4 +15,8 @@ getArticles(): Observable <Article[]>{
   return this.http.get<Article[]>(environment.apiUrl + "/dashboard/overview");
 }
 
+togglePublishedState(article: Article): Observable<Article>{
+  return this.http.post<Article>(environment.apiUrl + "/dashboard/article/published", article);
+}
+
 }

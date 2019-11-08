@@ -6,4 +6,6 @@ export class Article {
     content = '';
     description = '';
     imageUrl = '';
+    published: boolean;
+    
 }
